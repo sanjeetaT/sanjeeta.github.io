@@ -1,0 +1,9 @@
+/* large screen size 1070px */
+@media(max-width: 1070px){
+    html{
+    font-size: 55%;
+
+}
+
+}
+
