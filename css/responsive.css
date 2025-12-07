@@ -1,52 +1,39 @@
-/* Tablet size */
-@media(max-width: 1024px){
-    html{
-        font-size: 55%;
-    }
-    .container{
-        padding: 0 15px;
-    }
+/* -------- Mobile / Tablet -------- */
+@media (max-width: 992px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    width: 100%;
+  }
 }
 
-/* Mobile size */
-@media(max-width: 900px){
+/* Mobile specific */
+@media (max-width: 768px) {
+  /* Show hamburger */
+  .menu-btn {
+    display: block;
+  }
 
-    /* Show button */
-    .menu-btn{
-        display: block;
-    }
+  /* Hide desktop nav links in header */
+  .nav-menu ul {
+    display: block;
+  }
 
-    /* Hide desktop menu by default */
-    .nav-menu{
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 70%;
-        height: 100%;
-        background: #000;
-        padding-top: 80px;
-        flex-direction: column;
-        transition: right 0.4s ease;
-        z-index: 1000;
-    }
+  .nav-menu ul li {
+    margin: 20px 0;
+  }
 
-    .nav-menu.active{
-        right: 0;
-    }
+  /* Close button */
+  .close-btn {
+    display: none; /* shown by JS when menu opens */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 
-    .nav-menu ul{
-        flex-direction: column;
-        gap: 2rem;
-        padding-left: 40px;
-    }
-
-    /* Show close button when active */
-    .nav-menu.active .close-btn{
-        display: block;
-    }
-
-    /* Hide hamburger when menu active */
-    .nav-menu.active ~ .menu-btn{
-        display: none;
-    }
+  /* Hero text smaller */
+  .text-box h2 { font-size: 28px; }
+  .text-box h3 { font-size: 18px; }
 }

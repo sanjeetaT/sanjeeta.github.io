@@ -4,12 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nepali Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
-<!-- HEADER -->
+<!---------------- ------------HEADER ------------------------------ -->
 <header>
   <div class="container">
     <div class="custom-navbar">
@@ -22,92 +27,66 @@
       <!-- Navigation -->
       <nav class="nav-menu" id="navMenu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#showcase">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <span class="close-btn" id="closeBtn">✕</span>
       </nav>
 
-      <!-- Hamburger button -->
+      <!-- Button -->
       <span class="menu-btn" id="menuBtn">☰</span>
 
     </div>
   </div>
 </header>
 
-<!-- HERO SECTION -->
+<!-- ---------------------- HERO SECTION ----------------------- -->
 <main id="showcase">
   <div class="container">
     <div class="text-box">
       <h2>SURPRISE YOUR PLATE</h2>
-      <h3>Find food + Drinks</h3>
+      <h3>Find Authentic Nepali Food & Drinks</h3>
+      <a href="#menu" class="btn">Explore Menu</a>
     </div>
   </div>
 </main>
+<!--------------------------------------------------------->
 
-<!-- SPECIAL OFFER SECTION -->
-<section id="offers">
-    <div class="container">
-        <h2 class="section-title">Special Food Offers</h2>
+<!-- ----------------------- ABOUT SECTION ------------------------------- -->
+<section id="about">
+  <div class="container about-box">
 
-        <div class="offer-grid">
-
-            <div class="offer-box">
-                <img src="./imgs/offer1.jpeg" alt="">
-                <h3>Veg & Chicken Momo</h3>
-                <p>Delicious Nepali momo served with spicy sauce.</p>
-                <span class="price">$10</span>
-            </div>
-
-            <div class="offer-box">
-                <img src="./imgs/offer2.jpeg" alt="">
-                <h3>Mixed Thakali Set</h3>
-                <p>Authentic Nepali thali with rice, dal, curry and achar.</p>
-                <span class="price">$12</span>
-            </div>
-
-            <div class="offer-box">
-                <img src="./imgs/offer3.jpeg" alt="">
-                <h3>Newari Khaja Set</h3>
-                <p>Newari-style plate with beaten rice, bara, and chhoila.</p>
-                <span class="price">$15</span>
-            </div>
-
-        </div>
+    <div class="about-img">
+      <img src="./imgs/about.jpg" alt="Restaurant Image">
     </div>
+
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Welcome to our Nepali Restaurant, where we bring the flavors of the Himalayas 
+        to your plate. Enjoy fresh, authentic dishes inspired by traditional Nepali 
+        recipes passed down through generations.
+      </p>
+
+      <p>
+        Our mission is to serve delicious meals prepared with care, using the finest 
+        ingredients and warm hospitality.
+      </p>
+
+      <a href="#reservation" class="btn">Book a Table</a>
+    </div>
+
+  </div>
 </section>
 
-<!-- Reservation here-->
- <div id="reservation_tb1">
-  <div class="container">
-    <div class="form_data">
-      <h3 class="normal_heading">Your Table</h3>
-      <h2 class="main_heading">Reservation Now...</h2>
-      <form action="#">
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Contact Number">
-        <input email="email" placeholder="Email Address">
-        <input email="email" placeholder="Number of People">
-         <input data="date" placeholder="Book of Data">
-         <input data="text" placeholder="Your Time">
-         <textarea 
-         name="" 
-         id="" 
-         cols="10" 
-         rows="10" 
-         placeholder="Message Request"
-         ></textarea>
-         
-         <button type="button">Book Now</button>
-      </form>
-    </div>
-  </div>
- </div>
-   <!----Reservation Now  close -->
+<!-- JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
