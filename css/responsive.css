@@ -1,0 +1,52 @@
+/* Tablet size */
+@media(max-width: 1024px){
+    html{
+        font-size: 55%;
+    }
+    .container{
+        padding: 0 15px;
+    }
+}
+
+/* Mobile size */
+@media(max-width: 900px){
+
+    /* Show button */
+    .menu-btn{
+        display: block;
+    }
+
+    /* Hide desktop menu by default */
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100%;
+        background: #000;
+        padding-top: 80px;
+        flex-direction: column;
+        transition: right 0.4s ease;
+        z-index: 1000;
+    }
+
+    .nav-menu.active{
+        right: 0;
+    }
+
+    .nav-menu ul{
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 40px;
+    }
+
+    /* Show close button when active */
+    .nav-menu.active .close-btn{
+        display: block;
+    }
+
+    /* Hide hamburger when menu active */
+    .nav-menu.active ~ .menu-btn{
+        display: none;
+    }
+}

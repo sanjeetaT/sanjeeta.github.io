@@ -1,59 +1,113 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nepali Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/respon.css">
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <div class="custom-navbar">
 
-    <!-- Font Awesome FIXED -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#"><img src="./imgs/logo.png" alt="Logo"></a>
+      </div>
 
-    <!-- Bootstrap FIXED -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Navigation -->
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span class="close-btn" id="closeBtn">✕</span>
+      </nav>
 
-    <title>Nepali Restaurant</title>
-  </head>
-  <body>
+      <!-- Hamburger button -->
+      <span class="menu-btn" id="menuBtn">☰</span>
 
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <div class="custom-navbar">
+    </div>
+  </div>
+</header>
 
-          <div class="logo">
-            <a href="#"><img src="./img/logo.png" alt="Logo"></a>
-          </div>
+<!-- HERO SECTION -->
+<main id="showcase">
+  <div class="container">
+    <div class="text-box">
+      <h2>SURPRISE YOUR PLATE</h2>
+      <h3>Find food + Drinks</h3>
+    </div>
+  </div>
+</main>
 
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Reservation</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
+<!-- SPECIAL OFFER SECTION -->
+<section id="offers">
+    <div class="container">
+        <h2 class="section-title">Special Food Offers</h2>
+
+        <div class="offer-grid">
+
+            <div class="offer-box">
+                <img src="./imgs/offer1.jpeg" alt="">
+                <h3>Veg & Chicken Momo</h3>
+                <p>Delicious Nepali momo served with spicy sauce.</p>
+                <span class="price">$10</span>
+            </div>
+
+            <div class="offer-box">
+                <img src="./imgs/offer2.jpeg" alt="">
+                <h3>Mixed Thakali Set</h3>
+                <p>Authentic Nepali thali with rice, dal, curry and achar.</p>
+                <span class="price">$12</span>
+            </div>
+
+            <div class="offer-box">
+                <img src="./imgs/offer3.jpeg" alt="">
+                <h3>Newari Khaja Set</h3>
+                <p>Newari-style plate with beaten rice, bara, and chhoila.</p>
+                <span class="price">$15</span>
+            </div>
 
         </div>
-      </div>
-    </header>
-    <!-- Header  done -->
+    </div>
+</section>
 
-                       <!--ShowCase-->
-    <main id="showcase">
-      <div class="container">
-        <div class="content">
-          <h2>SURPRISE YOUR PLATE</h2>
-          <h3> Find food + Drinks</h3>
-        </div>
-      </div>
-    </main>
-
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+<!-- Reservation here-->
+ <div id="reservation_tb1">
+  <div class="container">
+    <div class="form_data">
+      <h3 class="normal_heading">Your Table</h3>
+      <h2 class="main_heading">Reservation Now...</h2>
+      <form action="#">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Contact Number">
+        <input email="email" placeholder="Email Address">
+        <input email="email" placeholder="Number of People">
+         <input data="date" placeholder="Book of Data">
+         <input data="text" placeholder="Your Time">
+         <textarea 
+         name="" 
+         id="" 
+         cols="10" 
+         rows="10" 
+         placeholder="Message Request"
+         ></textarea>
+         
+         <button type="button">Book Now</button>
+      </form>
+    </div>
+  </div>
+ </div>
+   <!----Reservation Now  close -->
+<script src="js/script.js"></script>
+</body>
 </html>

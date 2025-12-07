@@ -1,137 +1,227 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Righteous&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Righteous&display=swap');
 
 :root{
     --primary_color: #e74c3c;
     --white_color: #fff;
-    --ubuntu: "Ubuntu";
-    --righteous: "Righteous";
-    --box-shadow: 10px 10px 5px rgba(0,0,0,.3);
 }
 
-html{
-    font-size: 70%;
-}
-
+/* GLOBAL */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     font-family: "Poppins", sans-serif;
+    background: #111;
+    color: var(--white_color);
+    padding-top: 100px;
 }
 
 a{
     text-decoration: none;
 }
 
-body{
-    padding-top: 100px;
-}
-
 .container{
-    max-width: 1440px;
+    max-width: 1200px;
     margin: auto;
-    padding: 0 80px;
+    padding: 0 20px;
 }
 
 /* HEADER */
 header{
     width: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.7);
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     padding: 1.5rem 0;
-    top:0;
-    left:0;
-    z-index:100;
 }
 
-.logo img{
-    width: 120px;
-    object-fit: contain;
-    display: block;
-}
-
-/* NAVBAR */
 .custom-navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.custom-navbar nav ul{
+.logo img{
+    width: 120px;
+}
+
+/* Desktop Navigation */
+.nav-menu{
     display: flex;
-    align-items: center;
-}
-
-.custom-navbar nav ul li{
-    list-style: none;
-    padding: 20px 15px;
-    margin: 0 1rem;
-}
-
-.custom-navbar nav ul li a{
-    font-family: 'Righteous', cursive;
-    color: var(--white_color);
-    font-size: 1.3rem;
-    text-transform: uppercase;
     position: relative;
 }
-.custom-navbar nav ul li a::after{
+
+.nav-menu ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-menu ul li a{
+    color: var(--white_color);
+    font-family: "Righteous", cursive;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+/* HOVER EFFECT */
+.nav-menu ul li a::after{
     content: "";
     position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0%;
     height: 3px;
     background: var(--primary_color);
-    width: 0;
-    left: 0;
-    top: 30px;
-    transition: all 0.5s ease-in-out;
+    transition: 0.3s;
 }
 
-.custom-navbar nav ul li a:hover::after{
+.nav-menu ul li a:hover::after{
     width: 100%;
-
 }
 
-/* Showcase start */ 
+/*  Close Buttons */
+.menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white_color);
+    display: none;
+}
+
+.close-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white_color);
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* HERO SECTION */
 #showcase{
-    background: url('../img/image1.jpg') no-repeat center center/cover;
-    min-height: 100vh;
+    background: url("../imgs/image1.jpg") no-repeat center/cover;
+    height: 100vh;
     position: relative;
-    z-index: -10;
 }
 
-#showcase::before{
-    content: "";
-    background: rgba(0,0,0,.6);
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -11;
+#showcase .text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-#showcase .content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-#showcase .content h2{
+#showcase h2{
     font-size: 7rem;
-    font-family: var(--righteous);
-    color: var(--white_color);
-    text-align: center;
-    letter-spacing: 2px;
+    font-family: "Righteous";
 }
 
-#showcase .content h3{
+#showcase h3{
     font-size: 3rem;
-    font-family: var(--righteous);
-    color: var(--white_color);
+    font-family: "Righteous";
+}
+
+/* OFFER SECTION */
+#offers{
+    padding: 80px 0;
+}
+
+.section-title{
     text-align: center;
-    letter-spacing: 2px;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-family: "Righteous";
+    color: var(--primary_color);
+}
+
+.offer-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.offer-box{
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.offer-box:hover{
+    transform: translateY(-10px);
+}
+
+.offer-box img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.offer-box h3{
+    margin-top: 15px;
+    font-size: 2rem;
+    font-family: "Righteous";
+}
+
+.offer-box p{
+    margin: 10px 0;
+    color: #ddd;
+}
+
+.price{
+    font-size: 1.8rem;
+    color: var(--primary_color);
+    font-weight: bold;
+}
+
+/* MOBILE MENU */
+@media(max-width: 900px){
+
+    .menu-btn{
+        display: block;
+    }
+
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #000;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        transition: 0.4s;
+    }
+
+    .nav-menu.show{
+        right: 0;
+    }
+
+    .nav-menu ul{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .close-btn{
+        display: block;
+    }
+}
+
+@media(max-width: 768px){
+    .offer-grid{
+        grid-template-columns: 1fr;
+    }
 }
 
 
