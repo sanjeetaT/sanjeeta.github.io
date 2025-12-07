@@ -17,6 +17,10 @@
   .gallery-grid{
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .testi-box{
+    width: 45%;
+  }
 }
 
 /* ----------- MOBILE ----------- */
@@ -83,5 +87,31 @@
     height: 200px;
   }
 }
+
+/*-----------Testimonials Responsive ----------------------*/
+
+
+@media (max-width: 600px) {
+  .testi-box {
+    width: 100%;
+  }
+
+  #testimonials .section-title {
+    font-size: 26px;
+  }
+}
+
+/*Reservation Responsive */
+@media (max-width: 600px) {
+  #reservation .main_heading {
+    font-size: 28px;
+  }
+
+  #reservation form input,
+  #reservation form textarea {
+    font-size: 14px;
+  }
+}
+
 
 

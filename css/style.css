@@ -193,4 +193,110 @@ header {
   gap: 30px;
 }
 
+/* ========================= TESTIMONIALS SECTION ========================= */
+#testimonials {
+  padding: 80px 0;
+  background: #fff;
+}
+
+#testimonials .section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.testi-grid {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.testi-box {
+  width: 30%;
+  min-width: 280px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 25px 20px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.testi-box:hover {
+  transform: translateY(-5px);
+}
+
+.testi-box p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.testi-box h4 {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* ========================= RESERVATION SECTION ========================= */
+#reservation {
+  padding: 90px 0;
+  background: #fff4e6;
+}
+
+#reservation .form_data {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+#reservation .normal_heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ff5722;
+}
+
+#reservation .main_heading {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#reservation form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#reservation input,
+#reservation textarea {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#reservation button {
+  padding: 14px;
+  background: #ff6b2c;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+}
+
+#reservation button:hover {
+  background: #e4571e;
+}
+
+
 

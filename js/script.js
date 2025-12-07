@@ -30,3 +30,32 @@ navMenu.querySelectorAll("a").forEach(link => {
     }
   });
 });
+
+//Reservation Form Logic //
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("#reservation form");
+  const button = form.querySelector("button");
+
+  button.addEventListener("click", function () {
+    let inputs = form.querySelectorAll("input, textarea");
+    let valid = true;
+
+    inputs.forEach(input => {
+      if (input.value.trim() === "") {
+        input.style.border = "2px solid red";
+        valid = false;
+      } else {
+        input.style.border = "1px solid #ccc";
+      }
+    });
+
+    if (!valid) {
+      alert("Please fill out all fields!");
+      return;
+    }
+
+    alert("Your reservation has been submitted!");
+    form.reset();
+  });
+});
+
