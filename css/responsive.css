@@ -1,39 +1,58 @@
-/* -------- Mobile / Tablet -------- */
+/* ----------- TABLETS ----------- */
 @media (max-width: 992px) {
-  #about {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-box {
     flex-direction: column;
     text-align: center;
   }
-  .about-text {
-    width: 100%;
-  }
 }
 
-/* Mobile specific */
+/* ----------- MOBILE ----------- */
 @media (max-width: 768px) {
-  /* Show hamburger */
+
+  /* NAV MOBILE */
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    flex-direction: column;
+    padding-top: 100px;
+    transition: 0.3s;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+  }
+
+  .nav-menu.show {
+    right: 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .menu-btn {
     display: block;
   }
 
-  /* Hide desktop nav links in header */
-  .nav-menu ul {
-    display: block;
-  }
-
-  .nav-menu ul li {
-    margin: 20px 0;
-  }
-
-  /* Close button */
   .close-btn {
-    display: none; /* shown by JS when menu opens */
+    display: block;
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 20px;
   }
 
-  /* Hero text smaller */
-  .text-box h2 { font-size: 28px; }
-  .text-box h3 { font-size: 18px; }
+  /* HERO */
+  #showcase h2 { font-size: 32px; }
+  #showcase h3 { font-size: 20px; }
+
+  /* MENU */
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
 }

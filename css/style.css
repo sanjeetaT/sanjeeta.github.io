@@ -1,127 +1,166 @@
-/* -------- Base styles -------- */
-body {
-  font-family: 'Poppins', sans-serif;
+/* ------------------- GLOBAL ------------------- */
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
   color: #333;
 }
 
-/* Container */
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-/* -------- Header / Navbar -------- */
+/* ------------------- HEADER ------------------- */
 header {
+  width: 100%;
+  padding: 20px 0;
+  background: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  z-index: 1000;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .custom-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 0;
 }
 
-/* Logo */
 .logo img {
   width: 120px;
 }
 
-/* Navigation */
+/* NAV MENU */
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
 .nav-menu ul {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   list-style: none;
 }
 
 .nav-menu ul li a {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-weight: bold;
 }
 
-/* Hamburger / close buttons */
-.menu-btn, .close-btn {
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.close-btn {
+  display: none;
   font-size: 28px;
   cursor: pointer;
-  display: none; /* visible on mobile only */
+  margin-left: 20px;
 }
 
-/* Mobile nav hidden by default */
-.nav-menu {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 70%;
-  height: 100vh;
-  background: #fff;
-  padding: 80px 20px;
-  box-shadow: -6px 0 20px rgba(0,0,0,0.1);
-  transition: right 0.3s ease;
-}
-
-.nav-menu.active {
-  right: 0;
-}
-
-/* -------- Hero Section -------- */
+/* ------------------- HERO / SHOWCASE ------------------- */
 #showcase {
-  height: 80vh;
-  background: url('../imgs/hero.jpg') center/cover no-repeat;
+  background: url('../imgs/hero.jpg') no-repeat center/cover;
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  padding-top: 80px; /* space for fixed header */
 }
 
-.text-box h2 {
-  font-size: 40px;
+#showcase .text-box {
+  text-align: left;
+  color: #fff;
+}
+
+#showcase h2 {
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
-.text-box h3 {
-  font-size: 24px;
+#showcase h3 {
+  font-size: 28px;
   margin-bottom: 20px;
 }
 
 .btn {
-  padding: 12px 24px;
-  background: #c0392b;
+  display: inline-block;
+  padding: 12px 25px;
+  background: #d62828;
   color: #fff;
+  border-radius: 5px;
   text-decoration: none;
-  border-radius: 6px;
 }
 
-/* -------- About Section -------- */
+/* ------------------- ABOUT SECTION ------------------- */
 #about {
+  padding: 100px 0;
+}
+
+.about-box {
   display: flex;
   align-items: center;
-  padding: 80px 0;
   gap: 40px;
 }
 
 .about-img img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .about-text h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 35px;
+  margin-bottom: 15px;
 }
 
 .about-text p {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+/* ------------------- MENU SECTION ------------------- */
+#menu {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.menu-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu-item h3 {
+  margin-top: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #d62828;
 }
