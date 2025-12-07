@@ -8,6 +8,15 @@
     flex-direction: column;
     text-align: center;
   }
+
+  /* offers */
+  .offer-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*gallery   */
+  .gallery-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ----------- MOBILE ----------- */
@@ -55,4 +64,24 @@
   .menu-grid {
     grid-template-columns: 1fr;
   }
+  
+  /* Offers */
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-box img {
+    height: auto;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid img {
+    height: 200px;
+  }
 }
+
+

@@ -163,4 +163,34 @@ header {
 .price {
   font-weight: bold;
   color: #d62828;
+}/* ------------------- GALLERY SECTION ------------------- */
+#gallery {
+  padding: 100px 0;
+  text-align: center;
 }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+
