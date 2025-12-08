@@ -1,4 +1,4 @@
-/* ------------------- GLOBAL ------------------- */
+/* GLOBAL  */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #fff;
+  background: #9a3030;
   color: #333;
 }
 
@@ -17,11 +17,11 @@ body {
   margin: auto;
 }
 
-/* ------------------- HEADER ------------------- */
+/*  HEADER  */
 header {
   width: 100%;
   padding: 20px 0;
-  background: #ffffff;
+  background: #7d983e;
   position: fixed;
   top: 0;
   left: 0;
@@ -70,7 +70,7 @@ header {
   margin-left: 20px;
 }
 
-/* ------------------- HERO / SHOWCASE ------------------- */
+/*  HERO / SHOWCASE  */
 #showcase {
   background: url('../imgs/hero.jpg') no-repeat center/cover;
   height: 100vh;
@@ -102,7 +102,7 @@ header {
   text-decoration: none;
 }
 
-/* ------------------- ABOUT SECTION ------------------- */
+/* ABOUT SECTION  */
 #about {
   padding: 100px 0;
 }
@@ -127,7 +127,7 @@ header {
   margin-bottom: 15px;
 }
 
-/* ------------------- MENU SECTION ------------------- */
+/* MENU SECTION  */
 #menu {
   padding: 100px 0;
   text-align: center;
@@ -163,7 +163,7 @@ header {
 .price {
   font-weight: bold;
   color: #d62828;
-}/* ------------------- GALLERY SECTION ------------------- */
+}/*  GALLERY SECTION */
 #gallery {
   padding: 100px 0;
   text-align: center;
@@ -193,10 +193,10 @@ header {
   gap: 30px;
 }
 
-/* ========================= TESTIMONIALS SECTION ========================= */
+/* TESTIMONIALS SECTION  */
 #testimonials {
   padding: 80px 0;
-  background: #fff;
+  background: #316ea7;
 }
 
 #testimonials .section-title {
@@ -241,14 +241,14 @@ header {
 }
 
 
-/* ========================= RESERVATION SECTION ========================= */
+/* RESERVATION SECTION */
 #reservation {
   padding: 90px 0;
-  background: #fff4e6;
+  background: #2da2b2;
 }
 
 #reservation .form_data {
-  background: #ffffff;
+  background: #418e7c;
   padding: 35px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
@@ -297,6 +297,56 @@ header {
 #reservation button:hover {
   background: #e4571e;
 }
+
+/* CONTACT SECTION  */
+#contact {
+  padding: 90px 0;
+  background: #fff4e6;   /* soft cream background */
+}
+
+#contact .section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-info h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #ff6b2c;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+/*FOOTER  */
+footer {
+  background: #222;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  font-size: 16px;
+}
+
+
 
 
 

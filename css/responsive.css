@@ -86,6 +86,10 @@
   .gallery-grid img {
     height: 200px;
   }
+
+  .contact-grid{
+    grid-template-columns: 1fr;
+  }
 }
 
 /*-----------Testimonials Responsive ----------------------*/
