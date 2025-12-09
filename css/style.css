@@ -124,6 +124,22 @@ body {
   filter: invert(80%);
 }
 
+#work ul li {
+  margin-bottom: 30px; /* increase to 15 or 20 if you want more space */
+  font-size: 1.1rem;   /* optional – makes text nicer */
+  line-height: 1.6;    /* improves readability */
+}
+
+#work .container {
+  max-width: 800px;   /* makes the text narrower */
+}
+
+#work ul {
+  padding-left: 20px;
+}
+
+
+
 /* 
    CONTACT SECTION
  */
