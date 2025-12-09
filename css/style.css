@@ -1,0 +1,153 @@
+
+
+:root {
+  --primary: #4A90E2;
+  --secondary: #50C9C3;
+  --dark: #1C1E26;
+  --light: #F4F7FA;
+  --accent: #FF8C42;
+  --gray: #6c757d;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--light);
+  color: var(--dark);
+  margin: 0;
+}
+
+/* SECTION PADDING */
+.section-padding {
+  padding: 80px 0;
+}
+
+/* TITLES */
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+  /* HERO SECTION */
+
+
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(154, 104, 104);
+  padding: 20px;
+}
+
+.hero-section h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: var(--secondary);
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+.btn-primary:hover {
+  background-color: #ff7a28;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background: var(--dark);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--accent);
+  font-size: 1.3rem;
+}
+
+.navbar-nav .nav-link {
+  color: var(--light);
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent);
+}
+
+/* ABOUT SECTION */
+
+.profile-img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid var(--primary);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* PREVIOUS WORK + PROJECT CARD */
+
+#work,
+#projects {
+  background-color: var(--light);
+}
+
+.carousel-item {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item h3 {
+  color: var(--primary);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(80%);
+}
+
+/* 
+   CONTACT SECTION
+ */
+
+#contact {
+  background: rgb(234, 10, 111);
+}
+
+form .form-control {
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+}
+
+form .form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 4px var(--accent);
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
